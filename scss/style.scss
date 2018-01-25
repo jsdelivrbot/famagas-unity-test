@@ -143,19 +143,19 @@
 @import '_jquerynestable.scss';
 
 /* Login Page ================================== */
-@import 'pages/_loginpage.scss';
+@import 'authentication/_loginpage.scss';
 
 /* Sign Up Page ================================ */
-@import 'pages/_signuppage.scss';
+@import 'authentication/_signuppage.scss';
 
 /* Forgot Password Page ======================== */
-@import 'pages/_forgotpasswordpage.scss';
+@import 'authentication/_forgotpasswordpage.scss';
 
 /* 404 Not Found Page ========================== */
-@import 'pages/_404.scss';
+@import 'base/_404.scss';
 
 /* 500 Server Error Page ======================= */
-@import 'pages/_500.scss';
+@import 'base/_500.scss';
 
 /* Maps ======================================== */
 @import '_maps.scss';
