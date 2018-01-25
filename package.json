@@ -10,7 +10,8 @@
     "start": "node index.js",
     "test": "node test.js",
     "build-sass": "node-sass --include-path scss scss/style.scss public/stylesheets/style.css",
-    "watch-sass": "nodemon -e scss -x 'npm run build-sass'"
+    "watch-sass": "nodemon -e scss -x 'npm run build-sass'",
+    "build-heroku": "git push heroku master"
   },
   "dependencies": {
     "ejs": "^2.5.6",
