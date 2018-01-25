@@ -96,4 +96,8 @@ documentationRoutes.get('/waves', (req, res) => {
     res.render('documentation/waves');
 });
 
+documentationRoutes.get('/helper-classes', (req, res) => {
+    res.render('documentation/helper-classes');
+});
+
 module.exports = documentationRoutes;
