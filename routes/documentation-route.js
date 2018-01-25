@@ -60,6 +60,10 @@ documentationRoutes.get('/pagination', (req, res) => {
     res.render('documentation/pagination');
 });
 
+documentationRoutes.get('/pre-loaders', (req, res) => {
+    res.render('documentation/pre-loaders');
+});
+
 documentationRoutes.get('/progress-bars', (req, res) => {
     res.render('documentation/progress-bars');
 });
