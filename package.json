@@ -8,7 +8,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node test.js"
+    "test": "node test.js",
+    "build-sass": "node-sass --include-path scss scss/style.scss public/stylesheets/style.css",
+    "watch-sass": "nodemon -e scss -x 'npm run build-sass'"
   },
   "dependencies": {
     "ejs": "^2.5.6",
