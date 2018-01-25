@@ -69,7 +69,7 @@ documentationRoutes.get('/progress-bars', (req, res) => {
 });
 
 documentationRoutes.get('/range-sliders', (req, res) => {
-    res.render('documentation/typography');
+    res.render('documentation/range-sliders');
 });
 
 documentationRoutes.get('/sortable-nestable', (req, res) => {
