@@ -100,4 +100,8 @@ documentationRoutes.get('/helper-classes', (req, res) => {
     res.render('documentation/helper-classes');
 });
 
+documentationRoutes.get('/change-logs', (req, res) => {
+    res.render('documentation/change-logs');
+});
+
 module.exports = documentationRoutes;
