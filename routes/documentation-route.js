@@ -13,7 +13,7 @@ documentationRoutes.get('/badges', (req, res) => {
 });
 
 documentationRoutes.get('/breadcrumbs', (req, res) => {
-    res.render('documentation/breadcrubs');
+    res.render('documentation/breadcrumbs');
 });
 
 documentationRoutes.get('/buttons', (req, res) => {
