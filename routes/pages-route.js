@@ -1,7 +1,7 @@
-const routes = require('express').Router();
+const pageRoutes = require('express').Router();
 
-routes.get('/typography', (req, res) => {
+pageRoutes.get('/typography', (req, res) => {
     res.render('pages/typography');
 });
 
-module.exports = routes;
+module.exports = pageRoutes;

@@ -1,11 +1,14 @@
 const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 5000
-const routes = require('./routes/pages-route');
+
+const pageRoutes = require('./routes/pages-route');
+const authRoutes = require('./routes/authentication-route');
 
 express()
 .use(express.static(path.join(__dirname, 'public')),)
-.use('/', routes)
+.use('/', pageRoutes)
+.use('/', authRoutes)
 .set('views', path.join(__dirname, 'views'))
 .set('view engine', 'ejs')
 .get('/', (req, res) => res.render('pages/index'))
