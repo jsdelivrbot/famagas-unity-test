@@ -16,7 +16,7 @@ express()
 .get('/', (req, res) => res.render('pages/index'))
 .listen(PORT, () => console.log(`
 **************************************************************************************
-                        FAMAGÁS API V:2.0 STARTED SUCCESSFULLY           
+                        FAMAGÁS ERP 5.6.2 STARTED SUCCESSFULLY           
                     Check your workstation in: localhost:${ PORT }
                         http://www.documentation.famagas.com.br
 **************************************************************************************`))
