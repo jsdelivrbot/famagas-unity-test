@@ -17,7 +17,7 @@ documentationRoutes.get('/breadcrumbs', (req, res) => {
 });
 
 documentationRoutes.get('/buttons', (req, res) => {
-    res.render('documentation/button');
+    res.render('documentation/buttons');
 });
 
 documentationRoutes.get('/collapse', (req, res) => {
