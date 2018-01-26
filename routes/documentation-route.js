@@ -2,102 +2,109 @@ const documentationRoutes = require('express').Router();
 
 // UI Templates
 documentationRoutes.get('/alerts', (req, res) => {
-    res.render('documentation/ui/alerts');
+    res.render('./views/documentation/alerts');
 });
 
 documentationRoutes.get('/animations', (req, res) => {
-    res.render('documentation/ui/animations');
+    res.render('documentation/animations');
 });
 
 documentationRoutes.get('/badges', (req, res) => {
-    res.render('documentation/ui/badges');
+    res.render('documentation/badges');
 });
 
 documentationRoutes.get('/breadcrumbs', (req, res) => {
-    res.render('documentation/ui/breadcrumbs');
+    res.render('documentation/breadcrumbs');
 });
 
 documentationRoutes.get('/buttons', (req, res) => {
-    res.render('documentation/ui/buttons');
+    res.render('documentation/buttons');
 });
 
 documentationRoutes.get('/collapse', (req, res) => {
-    res.render('documentation/ui/collapse');
+    res.render('documentation/collapse');
 });
 
 documentationRoutes.get('/colors', (req, res) => {
-    res.render('documentation/ui/colors');
+    res.render('documentation/colors');
 });
 
 documentationRoutes.get('/dialogs', (req, res) => {
-    res.render('documentation/ui/dialogs');
+    res.render('documentation/dialogs');
 });
 
 documentationRoutes.get('/icons', (req, res) => {
-    res.render('documentation/ui/icons');
+    res.render('documentation/icons');
 });
 
 documentationRoutes.get('/labels', (req, res) => {
-    res.render('documentation/ui/labels');
+    res.render('documentation/labels');
 });
 
 documentationRoutes.get('/list-group', (req, res) => {
-    res.render('documentation/ui/list-group');
+    res.render('documentation/list-group');
 });
 
 documentationRoutes.get('/media-object', (req, res) => {
-    res.render('documentation/ui/media-object');
+    res.render('documentation/media-object');
 });
 
 documentationRoutes.get('/modals', (req, res) => {
-    res.render('documentation/ui/modals');
+    res.render('documentation/modals');
 });
 
 documentationRoutes.get('/notifications', (req, res) => {
-    res.render('documentation/ui/notifications');
+    res.render('documentation/notifications');
 });
 
 documentationRoutes.get('/pagination', (req, res) => {
-    res.render('documentation/ui/pagination');
+    res.render('documentation/pagination');
 });
 
 documentationRoutes.get('/pre-loaders', (req, res) => {
-    res.render('documentation/ui/pre-loaders');
+    res.render('documentation/pre-loaders');
 });
 
 documentationRoutes.get('/progress-bars', (req, res) => {
-    res.render('documentation/ui/progress-bars');
+    res.render('documentation/progress-bars');
 });
 
 documentationRoutes.get('/range-sliders', (req, res) => {
-    res.render('documentation/ui/range-sliders');
+    res.render('documentation/range-sliders');
 });
 
 documentationRoutes.get('/sortable-nestable', (req, res) => {
-    res.render('documentation/ui/sortable-nestable');
+    res.render('documentation/sortable-nestable');
 });
 
 documentationRoutes.get('/tabs', (req, res) => {
-    res.render('documentation/ui/tabs');
+    res.render('documentation/tabs');
 });
 
 documentationRoutes.get('/thumbnails', (req, res) => {
-    res.render('documentation/ui/thumbnails');
+    res.render('documentation/thumbnails');
 });
 
 documentationRoutes.get('/tooltips-popovers', (req, res) => {
-    res.render('documentation/ui/tooltips-popovers');
+    res.render('documentation/tooltips-popovers');
+});
+
+documentationRoutes.get('/waves', (req, res) => {
+    res.render('documentation/waves');
 });
 
 // Chart Templates
+documentationRoutes.get('/chart-js', (req, res) => {
+    res.render('documentation/chartjs');
+});
+
+documentationRoutes.get('/flot', (req, res) => {
+    res.render('documentation/flot');
+});
 
 // Quick Pages Templates
 documentationRoutes.get('/typography', (req, res) => {
     res.render('documentation/typography');
-});
-
-documentationRoutes.get('/waves', (req, res) => {
-    res.render('documentation/ui/waves');
 });
 
 documentationRoutes.get('/helper-classes', (req, res) => {
