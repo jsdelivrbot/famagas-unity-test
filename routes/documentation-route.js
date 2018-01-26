@@ -102,6 +102,18 @@ documentationRoutes.get('/flot', (req, res) => {
     res.render('documentation/flot');
 });
 
+documentationRoutes.get('/knob', (req, res) => {
+    res.render('documentation/knob');
+});
+
+documentationRoutes.get('/morris', (req, res) => {
+    res.render('documentation/morris');
+});
+
+documentationRoutes.get('/spark-line', (req, res) => {
+    res.render('documentation/spark-line');
+});
+
 // Quick Pages Templates
 documentationRoutes.get('/typography', (req, res) => {
     res.render('documentation/typography');
