@@ -1,5 +1,6 @@
 const documentationRoutes = require('express').Router();
 
+// UI Templates
 documentationRoutes.get('/alerts', (req, res) => {
     res.render('documentation/ui/alerts');
 });
@@ -88,6 +89,9 @@ documentationRoutes.get('/tooltips-popovers', (req, res) => {
     res.render('documentation/ui/tooltips-popovers');
 });
 
+// Chart Templates
+
+// Quick Pages Templates
 documentationRoutes.get('/typography', (req, res) => {
     res.render('documentation/typography');
 });
