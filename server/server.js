@@ -1,14 +1,16 @@
-// Copyright IBM Corp. 2014,2015. All Rights Reserved.
-// Node module: loopback-example-user-management
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
 
 var loopback = require('loopback');
 var boot = require('loopback-boot');
-var path = require('path');
 var bodyParser = require('body-parser');
 
 var app = module.exports = loopback();
+
+const documentationRoutes = require('../routes/documentation-route');
+const pageRoutes = require('../routes/pages-route');
+const authRoutes = require('../routes/authentication-route');
 
 // configure view handler
 app.set('view engine', 'ejs');
@@ -31,6 +33,13 @@ app.start = function() {
     }
   });
 };
+
+express()
+.get('/', (req, res) => res.render('pages/index'))
+.use(express.static(path.join(__dirname, 'public')))
+.use('/', documentationRoutes)
+.use('/', pageRoutes)
+.use('/', authRoutes)
 
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
