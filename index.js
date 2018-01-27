@@ -34,13 +34,6 @@ app.start = function() {
   });
 };
 
-express()
-.get('/', (req, res) => res.render('pages/index'))
-.use(express.static(path.join(__dirname, 'public')))
-.use('/', documentationRoutes)
-.use('/', pageRoutes)
-.use('/', authRoutes)
-
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
 boot(app, __dirname, function(err) {

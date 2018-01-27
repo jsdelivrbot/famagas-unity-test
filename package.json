@@ -5,9 +5,9 @@
   "engines": {
     "node": "8.9.1"
   },
-  "main": "server/server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "start-with-api": "node server/server.js",
     "test": "node test.js",
     "build-sass": "node-sass --include-path scss scss/style.scss public/stylesheets/style.css",

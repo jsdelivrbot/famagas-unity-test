@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "common/models",
+      "models"
+    ]
+  },
+  "User": {
+    "dataSource": "famagasDB",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "famagasDB",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "famagasDB",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "famagasDB",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "famagasDB",
+    "public": false
+  },
+  "Email": {
+    "dataSource": "emailDs"
+  },
+  "user": {
+    "dataSource": "famagasDB",
+    "public": true,
+    "options": {}
+  }
+}

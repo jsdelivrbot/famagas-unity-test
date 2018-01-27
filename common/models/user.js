@@ -3,7 +3,7 @@
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
-var config = require('../../server/config.json');
+var config = require('./config.json');
 var path = require('path');
 var senderAddress = "noreply@loopback.com"; //Replace this address with your actual address
 
@@ -15,7 +15,7 @@ module.exports = function(User) {
       to: user.email,
       from: senderAddress,
       subject: 'Thanks for registering.',
-      template: path.resolve(__dirname, '../../server/views/verify.ejs'),
+      template: path.resolve(__dirname, 'views/verify.ejs'),
       redirect: '/verified',
       user: user
     };
@@ -49,7 +49,7 @@ module.exports = function(User) {
 
   //send password reset link when requested
   User.on('resetPasswordRequest', function(info) {
-    var url = 'http://' + config.host + ':' + config.port + '/reset-password';
+    var url = 'https://' + config.host + ':' + config.port + '/reset-password';
     var html = 'Click <a href="' + url + '?access_token=' +
         info.accessToken.id + '">here</a> to reset your password';
 
