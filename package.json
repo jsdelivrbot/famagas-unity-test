@@ -7,7 +7,7 @@
   },
   "main": "server/server.js",
   "scripts": {
-    "start": "node .",
+    "start": "node server.js",
     "start-with-api": "node server/server.js",
     "test": "node test.js",
     "build-sass": "node-sass --include-path scss scss/style.scss public/stylesheets/style.css",
